@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-const maxprimes = 10003
+const maxprimes = 10001
 
 func main() {
 	var nprimes = 1
 	var primes [maxprimes + 1]int
 	primes[0] = 2
-	for nprimes < maxprimes-1 {
+	for nprimes <= maxprimes {
 		var cand = primes[nprimes-1] + 1
 
 		for di := 0; di < nprimes-1; di++ {
